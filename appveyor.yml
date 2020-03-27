@@ -1,0 +1,4 @@
+image: macos
+
+build_script:
+  - ./build.sh
