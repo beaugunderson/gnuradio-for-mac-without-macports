@@ -1,5 +1,8 @@
 image: macos
 
+init:
+  - sh: curl -sflL 'https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-ssh.sh' | bash -e -
+
 install:
   - ./install-appveyor-dependencies.sh
 
@@ -7,4 +10,6 @@ build_script:
   - ./build.sh
 
 environment:
+  APPVEYOR_SSH_BLOCK: true
+  APPVEYOR_SSH_KEY: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDT4uD9/BPKSN6HrkiJSxVHsZl4sz0TXcAjW+hJnpXzj0uz2RWyMKAWYiQrpBQS/RU1CQec5MPzMQtb+KuIy9boxT7Hd8AmAP4HVLJbnR9ZRTZfQgAoup3pqbG2yYA7KUzw5rcyOf4sbPHbrUk2aP2yDRZe9RGP7C62yytW3ZNc3UlAEeUOeoTjtPyB3vOTupXaG+RHdWGuip2tlaYYPjM7PIPy2EAQOhul8IyZQtjenwKV4e7r4d1G+kqQaSrz/mrh8N2A+UJajjcysgZIm5XHHgDDqTgP65ihw932u9Sb6bI9x5RinJwuEH3tZ7LePPm9Wl+7qwn44fYGzZZmojMv beau@beaugunderson.com
   HOMEBREW_NO_AUTO_UPDATE: 1
