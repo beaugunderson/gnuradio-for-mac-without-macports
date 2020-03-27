@@ -1,4 +1,7 @@
 image: macos
 
+install:
+  - ./install-appveyor-dependencies.sh
+
 build_script:
   - ./build.sh
