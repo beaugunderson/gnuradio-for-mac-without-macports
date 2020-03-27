@@ -1104,7 +1104,7 @@ ln -sf ${PYTHON_CONFIG} ${INSTALL_DIR}/usr/bin/python-config
 # 
 (
   P=boost_1_71_0
-  URL=https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/distfiles/${P}.tar.bz2
+  URL=https://mirrors.evowise.com/gentoo/distfiles/distfiles/${P}.tar.bz2
   CKSUM=sha256:d73a8da01e8bf8c7eda40b4c84915071a8c8a0df4a6734537ddde4a8580524ee
   T=${P}
 
