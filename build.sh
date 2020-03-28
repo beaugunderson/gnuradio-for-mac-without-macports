@@ -10,6 +10,8 @@ export SHELLOPTS
 GNURADIO_BRANCH=3.8.0.0
 GNURADIO_COMMIT_HASH=git:4cc4c74c10411235fb36de58be09022c5573dbd8
 
+GENTOO_MIRROR=https://mirrors.evowise.com/gentoo/distfiles
+
 # default os x path minus /usr/local/bin, which could have pollutants
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin
 
@@ -1104,7 +1106,7 @@ ln -sf ${PYTHON_CONFIG} ${INSTALL_DIR}/usr/bin/python-config
 # 
 (
   P=boost_1_71_0
-  URL=https://mirrors.evowise.com/gentoo/distfiles/${P}.tar.bz2
+  URL="$GENTOO_MIRROR/${P}.tar.bz2"
   CKSUM=sha256:d73a8da01e8bf8c7eda40b4c84915071a8c8a0df4a6734537ddde4a8580524ee
   T=${P}
 
@@ -1295,7 +1297,7 @@ ln -sf ${PYTHON_CONFIG} ${INSTALL_DIR}/usr/bin/python-config
 # 
 (
   P=Mako-1.0.3
-  URL=https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/distfiles/Mako-1.0.3.tar.gz
+  URL="${GENTOO_MIRROR}/${P}.tar.gz"
   CKSUM=sha256:7644bc0ee35965d2e146dde31827b8982ed70a58281085fac42869a09764d38c
 
   LDFLAGS="${LDFLAGS} $(${PYTHON_CONFIG} --ldflags)"
@@ -1482,7 +1484,7 @@ ln -sf ${PYTHON_CONFIG} ${INSTALL_DIR}/usr/bin/python-config
 # 
 (
   P=libpng-1.6.37
-  URL="https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/distfiles/${P}.tar.xz"
+  URL="${GENTOO_MIRROR}/${P}.tar.xz"
   CKSUM=sha256:505e70834d35383537b6491e7ae8641f1a4bed1876dbfe361201fc80868d88ca
 
   SKIP_AUTORECONF=true \
@@ -1540,7 +1542,7 @@ ln -sf ${PYTHON_CONFIG} ${INSTALL_DIR}/usr/bin/python-config
 # 
 (
   P=freetype-2.10.1
-  URL="http://mirror.csclub.uwaterloo.ca/nongnu//freetype/${P}.tar.gz"
+  URL="${GENTOO_MIRROR}/${P}.tar.xz"
   CKSUM=sha256:3a60d391fd579440561bf0e7f31af2222bc610ad6ce4d9d7bd2165bca8669110
 
   SKIP_AUTORECONF=yes
@@ -2000,7 +2002,7 @@ ln -sf ${PYTHON_CONFIG} ${INSTALL_DIR}/usr/bin/python-config
 #
 (
   P=libf2c-20130927
-  URL=http://mirror.csclub.uwaterloo.ca/gentoo-distfiles/distfiles/libf2c-20130927.zip
+  URL="${GENTOO_MIRROR}/${P}.zip"
   CKSUM=sha256:5dff29c58b428fa00cd36b1220e2d71b9882a658fdec1aa094fb7e6e482d6765
   T=${P}
   BRANCH=""
