@@ -1543,7 +1543,7 @@ ln -sf ${PYTHON_CONFIG} ${INSTALL_DIR}/usr/bin/python-config
 (
   P=freetype-2.10.1
   URL="${GENTOO_MIRROR}/${P}.tar.xz"
-  CKSUM=sha256:3a60d391fd579440561bf0e7f31af2222bc610ad6ce4d9d7bd2165bca8669110
+  CKSUM=sha256:16dbfa488a21fe827dc27eaf708f42f7aa3bb997d745d31a19781628c36ba26f
 
   SKIP_AUTORECONF=yes
   SKIP_LIBTOOLIZE=yes
