@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+brew uninstall qt
 brew cask install xquartz
 brew install wget
 

@@ -8,6 +8,7 @@ install:
 
 build_script:
   - ./build.sh
+  - sleep 3600
 
 environment:
   APPVEYOR_SSH_BLOCK: true
