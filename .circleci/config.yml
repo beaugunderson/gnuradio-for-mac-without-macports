@@ -1,0 +1,11 @@
+version: 2.1
+jobs:
+  build-and-test:
+    macos:
+      xcode: 11.4.0
+    environment:
+      HOMEBREW_NO_AUTO_UPDATE: 1
+    steps:
+      - checkout
+      - run: ./scripts/install-appveyor-dependencies.sh
+      - run: ./build.sh
