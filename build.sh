@@ -1887,7 +1887,7 @@ ln -sf ${PYTHON_CONFIG} ${INSTALL_DIR}/usr/bin/python-config
   V=3.34.0-1
   P=adwaita-icon-theme-${V}
   FILENAME=${P}-any.pkg.tar.xz
-  URL="http://mirror.chaoticum.net/arch/extra/os/x86_64/${FILENAME}"
+  URL="http://archive.virtapi.org/packages/a/adwaita-icon-theme/${FILENAME}"
   CKSUM=sha256:0fc25d5b4c345ac2ccc90dbbcd17bcabe4344f35f10d2eac372d7fa86b067749
 
   if [ ! -f ${TMP_DIR}/.${P}.done ]; then
